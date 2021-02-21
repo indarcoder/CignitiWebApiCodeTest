@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="bin\Debug\netcoreapp3.1\TestCode.API.xml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.8" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.5" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.5" />
@@ -31,6 +27,11 @@
     <ProjectReference Include="..\TestCode.Middleware\TestCode.Middleware.csproj" />
     <ProjectReference Include="..\TestCode.Options\TestCode.Options.csproj" />
     <ProjectReference Include="..\TestCode.Services\TestCode.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\netcoreapp3.1\" />
+    <Folder Include="bin\Release\netcoreapp3.1\" />
   </ItemGroup>
 
 
