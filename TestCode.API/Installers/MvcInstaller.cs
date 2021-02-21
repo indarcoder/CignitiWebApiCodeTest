@@ -64,7 +64,7 @@ namespace TestCode.API.Installers
                                     Id = "Bearer"
                                 }
                             },
-                            new string[] {}
+                            new string[] {} 
                     }
                 });
             });
