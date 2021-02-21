@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestCode.Contract\TestCode.Contract.csproj" />
+    <ProjectReference Include="..\TestCode.Data\TestCode.Data.csproj" />
+    <ProjectReference Include="..\TestCode.Domain\TestCode.Domain.csproj" />
+    <ProjectReference Include="..\TestCode.Extension\TestCode.Extension.csproj" />
+    <ProjectReference Include="..\TestCode.Middleware\TestCode.Middleware.csproj" />
+    <ProjectReference Include="..\TestCode.Options\TestCode.Options.csproj" />
+  </ItemGroup>
+
+</Project>
