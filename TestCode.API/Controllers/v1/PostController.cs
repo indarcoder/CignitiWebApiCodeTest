@@ -76,10 +76,11 @@ namespace TestCode.API.Controllers.v1
                 var result = await _postService.CreatePostAsync(post);
                 if (result)
                 {
-                    return CreatedAtRoute(
-                            routeName: "GetPostById",
-                            routeValues: new { id = post.Id },
-                            value: post);
+                    return CreatedAtAction(nameof(GetPostById), new { Id = post.Id }, post);
+                    //return CreatedAtRoute(
+                    //        routeName: "GetPostById",
+                    //        routeValues: new { id = post.Id },
+                    //        value: post);
                 }
                 else
                 {
